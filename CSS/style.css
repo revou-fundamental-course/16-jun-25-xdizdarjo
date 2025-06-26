@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1493; 
+    color: white; 
+    font-style: arial; 
+    margin-bottom: 80px;
+    }
+
+.judul {
+    font-weight: bold;
+    font-style: arial;
+    font-size: 39px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.paragraf {
+    font-size: 29px;
+    font-style: arial;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 0;
+}
+
+.button {
+    margin-top: 15px;
+    background: #ff1493;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin: 6px;
+    color: #ff1493;
+    background: white;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 11px;
+    height:28px;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 29px;
+    text-align: center;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: white;
+    box-sizing: border-box;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    background-attachment: scroll;
+    background-clip: border-box;
+}
+
+.gambar {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.section-title {
+    background: #ff1493;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px
+}
+
+.rumus {
+    color: #ff1493;
+    font-style: arial;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 4px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff1493;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"] {
+    background: #970954;
+}
+
+.btnclass {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.output-box {
+    background-color: #eb74b3;
+    border-left: 5px solid #970954;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    font-style: arial;
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 768px) {
+    .judul {
+        font-size: 19px;
+    }
+
+    .paragraf {
+        font-size: 23px;
+    }
+
+    .btn {
+        font-size: 20px;
+        border: 2px;
+    }
+
+    .main-wrapper {
+    flex-direction: column;
+    align-items: center;
+    }
+}

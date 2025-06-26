@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Segitiga</title>
+        <link rel="stylesheet" href="CSS\style.css">
+    </head>
+    <body>
+        <main class="judul">
+        <h1>Menghitung Luas dan Keliling Segitiga</h1>
+        </main>
+        <main class="paragraf">
+        <p>Ayo input dengan angka yang valid!</p>
+        </main>
+            <div class="button">
+            <a href="index.html" class="btn">Beranda</a>
+            <a href="#" class="btn" onclick="document.getElementById('luas-section').scrollIntoView({behavior: 'smooth'})">Luas</a>
+            <a href="#" class="btn" onclick="document.getElementById('keliling-section').scrollIntoView({behavior: 'smooth'})">Keliling</a>
+        </div>
+
+
+        <main class="main-wrapper" id="luas-section">
+            <section class="card">
+            <h2 class="section-title">Luas Segitiga</h2>
+            <img src="segitiga.png" class="gambar">
+            <p class="rumus">Rumus : L = 1/2 x a x t</p>
+            <form id="form-luas">
+            <input type="number" id="alas" placeholder="Inputkan alas (a)" required>
+            <input type="number" id="tinggi" placeholder="Inputkan tinggi (t)" required>
+            
+            <div class="btnclass">
+                <button type="submit" id="hitungluas" onclick="hitungluas">Hitung</botton>
+                <button type="reset" id="reset" onclick="resetluas()">Reset</botton>
+            </div>
+            
+            <div id="output-luas" class="output-box"></div>
+        </form>
+        </section>
+            
+        <main class="main-wrapper" id="keliling-section">
+            <section class="card">
+            <h2 class="section-title">Keliling Segitiga</h2>
+            <img src="segitiga.png" class="gambar">
+            <p class="rumus">Rumus : K = a + b + c</p>
+            <form id="form-keliling">
+            <input type="number" id="sisi1" placeholder="Inputkan a" required>
+            <input type="number" id="sisi2" placeholder="Inputkan b" required>
+            <input type="number" id="sisi3" placeholder="Inputkan c" required>
+            
+            <div class="btnclass">
+                <button type="submit" id="hitungkeliling" onclick="hitungkeliling">Hitung</botton>
+                <button type="reset">Reset</botton>
+            </div>
+
+            <div id="output-keliling" class="output-box"></div>
+            </form>
+            </section> 
+        
+        
+        <script src="js\script.js">
+            </script>
+    
+    </body>
+
+</html>
